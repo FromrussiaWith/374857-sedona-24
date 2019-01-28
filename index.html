@@ -2,11 +2,128 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title> HTML Academy: Sedona</title>
   </head>
-  <body>
+  <body class="general-body">
+    <header class="main-header">
+      <a class="main-logo" href="#">
+        <img src="img/logo.svg" alt="Sedona">
+      </a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li class="site-navigation-current"><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  <main>
+    <div class="container">
+      <section class="intro">
+        <div class="welcom">
+          <img src="img/welcom.svg" alt="Welcom to the gargeous Sedona">
+        </div>
+        <h1> Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </section>
+
+      <section class="info">
+        <div class="info-text">
+          <h3>настоящий городок</h3>
+          <b>&#8211;&#8470;1&#8211;</b>
+          <p>Седона — не аттракцион для туристов, тут течет своя жизнь</p>
+        </div>
+      </section>
+
+      <section class="service">
+        <h2 class="visually-hidden">Сервис</h2>
+        <ul class="service-list">
+          <li class="service-item">
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="service-item">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="service-item">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производста!</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="info">
+        <div class="info-text">
+          <h3>Там есть мост дьявола</h3>
+          <b>&#8211;&#8470;2&#8211;</b>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3>Небольшая площадь</h3>
+            <b>&#8211;&#8470;3&#8211;</b>
+            <p>Все достопримечательности  находятся очень близко</p>
+          </li>
+          <li class="service-item">
+            <h3>Красивая дорога</h3>
+            <b>&#8211;&#8470;4&#8211;</b>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="service-item">
+            <h3>Мало туристов</h3>
+            <b>&#8211;&#8470;5&#8211;</b>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="found-hotels">
+        <h3>Заинтересновались?</h3>
+        <p>Укажите предполагаемые даты поездки и покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="btn" type="submit">Поиск гостиницы в седоне</button>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+            <img src="img/map.jpg" alt="карта проезда">
+      </section>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+
+      <div class="hashtag">
+        <p>#visitSEDONA</p>
+      </div>
+
+      <div class="footer-social">
+        <ul>
+          <li><a class="social social-twitter" href="#">Twitter</a></li>
+          <li><a class="social social-facebook" href="#">Facebook</a></li>
+          <li><a class="social social-youtube" href="#">Youtube</a></li>
+        </ul>
+      </div>
+
+      <p class="footer-copyright">
+        <b>Website by</b>
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+
+    </div>
+  </footer>
+
+    <section class="modal modal">
+      <h2 class="visually-hidden">Поиск отеля</h2>
+      <!-- Здесь будет форма -->
+    </section>
 
   </body>
 </html>
