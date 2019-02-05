@@ -7,7 +7,7 @@
   <body class="general-body">
     <header class="main-header">
       <a class="main-logo" href="#">
-        <img src="img/logo.png" alt="Sedona" width="140px" height="71px">
+        <img src="img/logo.png" alt="Sedona" width="140" height="71">
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -23,7 +23,7 @@
     <div class="container">
       <section class="intro">
         <div class="welcom">
-          <img src="img/welcome.png" alt="Welcom to the gargeous Sedona" width="500px" height="353px">
+          <img src="img/welcome.png" alt="Welcom to the gargeous Sedona" width="500" height="353">
         </div>
         <h1> Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -92,7 +92,7 @@
 
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-            <img src="img/map.jpg" alt="карта проезда">
+            <img src="img/map.jpg" alt="карта проезда" width="1200" height="477">
       </section>
     </div>
   </main>
@@ -120,9 +120,27 @@
     </div>
   </footer>
 
-    <section class="modal modal">
+    <section class="modal">
       <h2 class="visually-hidden">Поиск отеля</h2>
-      <!-- Здесь будет форма -->
+      <form class="find-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="find-item">
+            <label for="date-coming">Дата заезда</label>
+            <input id="date-coming" type="text" name="date" placeholder="24 ареля 2017">
+        </p>
+        <p class="find-item">
+            <label for="date-departure">Дата заезда</label>
+            <input id="date-departure" type="text" name="date" placeholder="4 июля 2017">
+        </p>
+        <p class="find-item">
+            <label for="numb-adults">Взрослые</label>
+            <input id="numb-adults" type="number" name="number" placeholder="2">
+        </p>
+        <p class="find-item">
+            <label for="numb-child">Дети</label>
+            <input id="numb-child" type="number" name="numd" placeholder="0">
+        </p>
+        <button class="button-find" type="submit">Найти</button>
+      </form>
     </section>
 
   </body>
