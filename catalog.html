@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title> HTML Academy: Sedona</title>
   </head>
   <body class="general">
@@ -21,36 +24,67 @@
 
   <main class="container">
     <section class="filters">
-      <div class="territory">
-        <h2>Инфраструктура:</h2>
-        <!--Здесь будет форма-->
-      </div>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура:</legent>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="wifi" id="wifi">
+              <label for="wifi">Wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
 
-      <div class="type">
-        <h2>Тип жилья:</h2>
-        <!--Здесь будет форма-->
-      </div>
+        <fieldset>
+          <legend>Тип жилья:</legent>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="apartment" id="apartment" checked>
+              <label for="apartment">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
 
-      <div class="price">
-        <h2>Стоимость в сутки (Р):</h2>
-        <!--Здесь будет форма-->
-      </div>
+      <form class="price" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <!--Здесь будет форма-->
+          <button type="submit" class="filter-button button">Показать</button>
+        </fieldset>
+      </form>
     </section>
 
     <section class="sort">
       <p>Найдено:3</p>
-        <ul class="sort list">
-          <li class="sort"><p>Сортировка</p></li>
+        <ul class="sort-list">
+          <li class="sort-found"><p>Сортировка:</p></li>
           <li class="sort-item"><a href="#">По цене</a></li>
           <li class="sort-item"><a href="#">По типу</a></li>
-          <li class="sort-top"><a href="#">По рейтингу</a></li>
+          <li class="sort-item"><a href="#">По рейтингу</a></li>
         </ul>
     </section>
 
     <section class="found-items">
       <div class="item-1">
         <img src="img/amara.jpg" alt="Amara resort &#38; spa" width="135" height="91">
-        <a href="#">Amara resort &#38; spa</a>
+        <a class="name" href="#">Amara resort &#38; spa</a>
         <b>Гостиница</b>
         <b>от 4000 Р.</b>
         <a class="detail" href="#">Поробнее</a>
@@ -59,7 +93,7 @@
       </div>
       <div class="item-2">
         <img src="img/desert.jpg" alt="Desert quail inn" width="135" height="91">
-        <a href="#">Desert quail inn</a>
+        <a class="name" href="#">Desert quail inn</a>
         <b>Мотель</b>
         <b>от 3000 Р.</b>
         <a class="detail" href="#">Поробнее</a>
@@ -68,7 +102,7 @@
       </div>
       <div class="item-3">
         <img src="img/villas.jpg" alt="Villas at poco diablo" width="135" height="91">
-        <a href="#">Villas at poco diablo</a>
+        <a class="name" href="#">Villas at poco diablo</a>
         <b>Апартаменты</b>
         <b>от 2000 Р.</b>
         <a class="detail" href="#">Поробнее</a>
