@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.site-navigation,
+.service-list,
+.advantages-list,
+.social,
+.filter-option,
+.sort-list {
+  list-style: none;
+}
+
+.general {
+  background-color: #ffffff;
+}
+
+.container {
+  background-color: #fefefe;
+}
+
+.site-navigation a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.sort p,
+.name {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.name:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus,
+.name:focus {
+  color: #766357;
+}
+
+.welcom {
+  background-image: url("../img/background.jpg");
+  background-position: top center;
+  background-repeat: repeat;
+}
+
+.intro {
+  text-align: center;
+}
+
+.container h3,
+.hashtag a {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.info-text h3 {
+  color: #ffffff;
+}
+
+.info-text {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.advantages {
+  background-color: #eeeeee;
+}
+
+.btn {
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.booking {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.btn:hover,
+.booking:hover {
+  color: #ffffff;
+  background-color: #604e43;
+}
+
+.btn:focus,
+.booking:focus {
+  color: #8b827c;
+  background-color: #503e33;
+}
+
+.top {
+  font-weight: 400;
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+.main-footer {
+  background-color: #f9fbf6;
+}
+
+.footer-social a,
+.button-found,
+.detail {
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.footer-social a:hover,
+.button-found:hover,
+.detail:hover {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.footer-social a:focus,
+.button-found:focus,
+.detail:focus {
+  color: #85b0cd;
+  background-color: #5496bd;
+}
+
+.found-form {
+  font-weight: 700;
+  color: #000000;
+}
+
+.found-item input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.filter fieldset,
+.price fieldset{
+  border: none;
+}
+
+.filters {
+  background-image: url("../img/filter background.jpg");
+  background-repeat: no-repeat;
+}
+
+.filter legend,
+.price legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.filter-option label {
+  font-size: 14px;
+}
+
+.sort-list li,
+.sort-found p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sort-item a {
+  text-decoration: underline;
+  text-decoration-color: #81b3d2;
+  text-decoration-style: dotted;
+  color: #d2d2d2;
+}
+
+.sort-item a:first-of-type {
+  text-decoration-style: none;
+}
+
+.sort-item a:hover {
+  color: #81b3d2;
+}
+
+.sort-item a:focus {
+  color: #000000;
+  text-decoration: none;
+}

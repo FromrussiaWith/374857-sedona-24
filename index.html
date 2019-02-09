@@ -2,9 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title> HTML Academy: Sedona</title>
   </head>
-  <body class="general-body">
+  <body class="general">
     <header class="main-header">
       <a class="main-logo" href="#">
         <img src="img/logo.png" alt="Sedona" width="140" height="71">
@@ -25,15 +28,18 @@
         <div class="welcom">
           <img src="img/welcome.png" alt="Welcom to the gargeous Sedona" width="500" height="353">
         </div>
-        <h1> Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+        <h1> Седона - небольшой городок в аризоне,<br> заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
 
       <section class="info">
+        <figure class="gallery">
+          <img src="img/Layer 10.jpg" alt="Городок" width="800" height="256">
+        </figure>
         <div class="info-text">
           <h3>настоящий городок</h3>
           <b>&#8211;&#8470;1&#8211;</b>
-          <p>Седона — не аттракцион для туристов, тут течет своя жизнь</p>
+          <p>Седона — не аттракцион для туристов,<br> там течет своя жизнь</p>
         </div>
       </section>
 
@@ -59,8 +65,11 @@
         <div class="info-text">
           <h3>Там есть мост дьявола</h3>
           <b>&#8211;&#8470;2&#8211;</b>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
         </div>
+        <figure class="gallery">
+          <img src="img/Layer 5.jpg" alt="Мост" width="800" height="256">
+        </figure>
       </section>
 
       <section class="advantages">
@@ -86,7 +95,7 @@
 
       <section class="found-hotels">
         <h3>Заинтересновались?</h3>
-        <p>Укажите предполагаемые даты поездки и покажем вам лучшие предложения гостиниц в седоне</p>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="btn" type="submit">Поиск гостиницы в седоне</button>
       </section>
 
@@ -105,7 +114,7 @@
       </div>
 
       <div class="footer-social">
-        <ul>
+        <ul class="social">
           <li><a class="social social-twitter" href="#">Twitter</a></li>
           <li><a class="social social-facebook" href="#">Facebook</a></li>
           <li><a class="social social-youtube" href="#">Youtube</a></li>
@@ -122,24 +131,24 @@
 
     <section class="modal">
       <h2 class="visually-hidden">Поиск отеля</h2>
-      <form class="find-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="find-item">
+      <form class="found-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="found-item">
             <label for="date-coming">Дата заезда</label>
-            <input id="date-coming" type="text" name="date" placeholder="24 ареля 2017">
+            <input id="date-coming" type="text" name="date" value="24 ареля 2017">
         </p>
-        <p class="find-item">
+        <p class="found-item">
             <label for="date-departure">Дата заезда</label>
-            <input id="date-departure" type="text" name="date" placeholder="4 июля 2017">
+            <input id="date-departure" type="text" name="date" value="4 июля 2017">
         </p>
-        <p class="find-item">
+        <p class="found-item">
             <label for="numb-adults">Взрослые</label>
             <input id="numb-adults" type="number" name="number" placeholder="2">
         </p>
-        <p class="find-item">
+        <p class="found-item">
             <label for="numb-child">Дети</label>
             <input id="numb-child" type="number" name="numd" placeholder="0">
         </p>
-        <button class="button-find" type="submit">Найти</button>
+        <button class="button-found" type="submit">Найти</button>
       </form>
     </section>
 
