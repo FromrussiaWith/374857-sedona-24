@@ -1,3 +1,9 @@
+html,
+body {
+  min-width: 1280px;
+  min-height: 2762px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +19,168 @@ body {
 a {
   text-decoration: none;
   color: #333333;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+}
+
+.main-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+.main-wrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 76px;
+  background-color: transparent;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  width: 1056px;
+}
+
+.welcome {
+  padding-top: 61px;
+  padding-left: 370px;
+  padding-right: 370px;
+  padding-bottom: 79px;
+  margin-bottom: 60px;
+}
+
+.info {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 1200px;
+}
+
+.gallery {
+  width: 400px;
+  min-height: 256px;
+  order: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.service {
+  margin-bottom: 40px;
+}
+
+.service-list,
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.service-item {
+  padding-top: 160px;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-bottom: 0;
+  width: 305px;
+  text-align: center;
+}
+
+.advantages {
+  margin-bottom: 55px;
+}
+
+.advantages-item {
+  padding-top: 45px;
+  padding-left: 42px;
+  padding-right: 52px;
+  padding-bottom: 40px;
+  width: 270px;
+  text-align: center;
+}
+
+.found-hotels {
+  text-align: center;
+}
+
+.found-hotels p {
+  margin-bottom: 45px;
+}
+
+.main-footer {
+  padding: 50px;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.hashtag {
+  margin: 0;
+  width: 140px;
+  margin-right: 256px;
+}
+
+.footer-social {
+  margin: 0;
+  width: 150px;
+}
+
+.footer-copyright {
+  margin: 0;
+  width: 240px;
+  margin-left: auto;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.sort {
+  display: flex;
+  padding-left: 70px;
+  margin-bottom: 50px;
+}
+
+.sort-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-item {
+  padding-top: 12px;
+  padding-left: 35px;
+}
+
+.foun-items {
+  display: flex;
+}
+
+.item {
+  margin-left: 70px;
+  margin-bottom: 61px;
+}
+
+.name {
+  margin-left: 30px;
+}
+
+.found-info {
+  display: inline-block;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -66,14 +234,28 @@ a {
   color: #766357;
 }
 
-.welcom {
+.welcome {
   background-image: url("../img/background.jpg");
   background-position: top center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
+
+/*.welcome::after {
+  background-image: url("../img/polygon.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}*/
 
 .intro {
   text-align: center;
+}
+
+.intro h1 {
+  margin-bottom: 30px;
+}
+
+.intro p {
+  margin-bottom: 55px;
 }
 
 .container h3,
@@ -88,12 +270,28 @@ a {
 }
 
 .info-text {
+  padding-top: 25px;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-bottom: 30px;
   color: #ffffff;
   background-color: #81b3d2;
+  text-align: center;
+}
+
+.service-item p{
+  color: #333333;
 }
 
 .advantages {
   background-color: #eeeeee;
+}
+
+.service-item h3,
+.advantages-item h3 {
+  line-height: 21px;
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .btn {
