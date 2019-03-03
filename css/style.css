@@ -14,7 +14,7 @@ body {
   text-transform: uppercase;
   color: #333333;
   background-color: #f2f2f2;
-    box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -40,7 +40,6 @@ a {
 .main-header {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .main-navigation {
@@ -88,11 +87,8 @@ a {
 
 .welcome {
   position: relative;
+  width: 1200px;
   top: -30px;
-  padding-left: 370px;
-  padding-right: 370px;
-  padding-bottom: 79px;
-  margin-bottom: 30px;
   background-image: url("../img/background.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -102,13 +98,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-content: space-between;
+  flex-direction: column;
   padding-top: 76px;
+  padding-bottom: 23px;
 }
 
 .welcome svg {
-  position: absolute;
-  right: -1px;
-  bottom: -1px;
+  position: relative;
+  align-items: center;
+  bottom: -9px;
 }
 
 .info {
@@ -118,15 +117,12 @@ a {
 }
 
 .info-text h3 {
-  width: 160px;
   color: #ffffff;
   text-align: center;
-  padding-left: 120px;
 }
 
 .info-text p {
-  width: 308px;
-  padding-left: 45px;
+  text-align: center;
 }
 
 .info-text {
@@ -141,6 +137,7 @@ a {
 }
 
 .gallery {
+  display: block;
   width: 400px;
   min-height: 256px;
   order: 2;
@@ -169,22 +166,12 @@ a {
   text-align: center;
 }
 
-.service-icon-1 svg {
+.icon-house::before  {
+  content: "";
   position: absolute;
-  left: 275px;
-  top: 1100px;
-}
-
-.service-icon-2 svg {
-  position: absolute;
-  left: 675px;
-  top: 1100px;
-}
-
-.service-icon-3 svg {
-  position: absolute;
-  left: 1085px;
-  top: 1100px;
+  background-image: url("../img/house.svg");
+  width: 80px;
+  height: 75px;
 }
 
 .advantages {
@@ -207,7 +194,6 @@ a {
 .found-hotels p {
   margin-bottom: 45px;
 }
-
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden {
@@ -256,9 +242,7 @@ input[type="checkbox"].visually-hidden {
 
 .intro h1 {
   position: relative;
-  left: 350px;
   text-align: center;
-  width: 500px;
   line-height: 26px;
   font-size: 21px;
   font-weight: 700;
@@ -267,7 +251,7 @@ input[type="checkbox"].visually-hidden {
 
 .intro p {
   position: relative;
-  left: 350px;
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -449,7 +433,9 @@ input[type="checkbox"].visually-hidden {
   position: absolute;
   left: -42px;
   top: 0;
-  background-image: url("../img/checkbox-off.svg");
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
 }
 
@@ -460,7 +446,7 @@ input[type="checkbox"].visually-hidden {
   left: -38px;
   width: 25px;
   height: 25px;
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
 }
 
