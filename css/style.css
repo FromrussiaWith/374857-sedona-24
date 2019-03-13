@@ -100,7 +100,6 @@ a {
 }
 
 .welcome img {
-
   padding-top: 76px;
   padding-bottom: 23px;
 }
@@ -120,6 +119,7 @@ a {
 .info-text h3 {
   color: #ffffff;
   text-align: center;
+  padding-top: 20px;
   padding-left: 118px;
   padding-right: 118px;
 }
@@ -134,7 +134,6 @@ a {
   display: flex;
   min-height: 256px;
   flex-direction: column;
-  justify-content: center;
   width: 400px;
   color: #ffffff;
   background-color: #81b3d2;
@@ -145,20 +144,17 @@ a {
   display: flex;
   width: 400px;
   min-height: 256px;
-  order: 5;
   margin: 0;
   padding: 0;
 }
 
-.gallery:nth-child(1) {
+.info-reverse {
   display: flex;
-  flex-direction: row-reverse;
+  margin-left: auto;
 }
 
-.info-text:nth-child(2) {
-  display: block;
-  flex-direction: row-reverse;
-  z-index: 1;
+.text-reverse {
+  margin-left: auto;
 }
 
 .service {
@@ -256,7 +252,7 @@ a {
 }
 
 .found-hotels h3 {
-  line-height: 36px;
+  line-height: 25px;
   font-size: 30px;
 }
 
@@ -387,10 +383,12 @@ input[type="checkbox"].visually-hidden {
   padding-top: 15px;
   background-color: #f9fbf6;
   bottom: 0;
+  padding-bottom: 35px;
 }
 
 .hashtag a {
   padding-left: 130px;
+  padding-top: 20px;
 }
 
 .footer-social ul {
@@ -399,7 +397,8 @@ input[type="checkbox"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-
+  padding-top: 15px;
+  padding-left: 40px;
 }
 
 .social-button {
@@ -442,19 +441,20 @@ input[type="checkbox"].visually-hidden {
   background-color: #5496bd;
 }
 
-.footer-copyright {
+.button {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+}
+
+.button span {
+  padding-top: 15px;
 }
 
 .copyright-logo {
-  display: flex;
   width: 123px;
   height: 49px;
   background-image: url("../img/logo_name.png");
   background-repeat: no-repeat;
-  margin-left: 80px;
+  margin-left: 15px;
   padding-right: 100px;
 }
 
@@ -482,17 +482,23 @@ input[type="checkbox"].visually-hidden {
 .filter fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
   border: none;
 }
 
 .filter {
   display: flex;
   justify-content: space-between;
-  padding: 0 72px;
+  padding-left: 72px;
   padding-top: 26px;
-  padding-bottom: 7px;
   width: 1056px;
+}
+
+.infrasrtrucure-item {
+  width: 256px;
+}
+
+.housetype-item {
+  width: 274px;
 }
 
 .filter ul {
@@ -506,7 +512,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filter-option {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-left: 35px;
 }
 
@@ -520,19 +526,19 @@ input[type="checkbox"].visually-hidden {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -42px;
-  top: 0;
+  left: -35px;
+  top: 5px;
   width: 25px;
   height: 25px;
   background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  top: 4px;
-  left: -38px;
+  left: -35px;
+  top: 0;
   width: 25px;
   height: 25px;
   background-image: url("../img/checkbox-on.png");
@@ -671,7 +677,28 @@ input[type="checkbox"].visually-hidden {
   padding-left: 35px;
 }
 
+.sorting-ab-list {
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 520px;
+  margin-top: 13px;
+  margin-bottom: 0;
+  height: 100%;
+}
+
+.sorting-ab-list li {
+  list-style: none;
+}
+
+.icon-up-dir {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
 .sorting-ab-list .icon-up-dir {
+  cursor: pointer;
   width: 10px;
   height: 10px;
   display: block;
@@ -681,6 +708,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .sorting-ab-list .icon-down-dir {
+  cursor: pointer;
   width: 10px;
   height: 10px;
   display: block;
@@ -757,14 +785,18 @@ input[type="checkbox"].visually-hidden {
   justify-content: space-between;
 }
 
+.item-top .stars {
+  display: flex;
+  justify-content: space-between;
+
+}
+
 .icon-star{
   width: 10px;
   height: 10px;
   display: flex;
   position: relative;
-  flex-direction: column;
   flex-wrap: wrap;
-
 }
 .icon-star::before {
   content: "";
@@ -831,8 +863,8 @@ input[type="checkbox"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   position: absolute;
-  top: -575px;
-  left: 315px;
+  top: -596px;
+  left: 317px;
   padding: 55px;
   width: 568px;
   height: 395px;
@@ -842,14 +874,14 @@ input[type="checkbox"].visually-hidden {
   box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
 }
 
-/*.form-invisible {
+.form-invisible {
   display: none;
 }
 
 .form-visible {
   display: flex;
   animation: form_opacity 0.7s;
-}*/
+}
 
 .found-form input {
   border: medium none;
