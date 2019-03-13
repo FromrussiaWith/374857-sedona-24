@@ -26,8 +26,8 @@
     <main>
       <section class="filters">
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Инфраструктура:</legent>
+          <fieldset class="infrasrtrucure-item">
+            <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
@@ -44,8 +44,8 @@
             </ul>
           </fieldset>
 
-          <fieldset>
-            <legend>Тип жилья:</legent>
+          <fieldset class="housetype-item">
+            <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
@@ -113,7 +113,12 @@
             </div>
             <div class="item-top">
               <a class="top" href="#">Рейтинг:8,5</a>
-              <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+              <div class="stars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
             </div>
           </div>
           <div class="item-info">
