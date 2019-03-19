@@ -43,8 +43,6 @@ a {
 }
 
 .main-navigation {
-  display: flex;
-  flex-direction: column;
   background-color: transparent;
 }
 
@@ -86,13 +84,12 @@ a {
 }
 
 .welcome {
-  position: relative;
   display: flex;
-  align-items: center;
+  align-items: center;*/
   justify-content: center;
   flex-direction: column;
   width: 1200px;
-  top: -30px;
+  margin-top: -30px;
   background-image: url("../img/background.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -122,6 +119,7 @@ a {
   padding-top: 20px;
   padding-left: 118px;
   padding-right: 118px;
+  line-height: 21px;
 }
 
 .info-text p {
@@ -131,18 +129,22 @@ a {
 }
 
 .info-text {
-  display: flex;
   min-height: 256px;
-  flex-direction: column;
   width: 400px;
   color: #ffffff;
   background-color: #81b3d2;
   text-align: center;
 }
 
+.info-text b,
+.advantages-item b {
+  font-weight: 400;
+  line-height: 21px;
+}
+
 .gallery {
-  display: flex;
-  width: 400px;
+  font-size: 0;
+  line-height: 0;
   min-height: 256px;
   margin: 0;
   padding: 0;
@@ -258,12 +260,13 @@ a {
 }
 
 .found-hotels h3 {
-  line-height: 25px;
+  line-height: 36px;
   font-size: 30px;
 }
 
 .found-hotels p {
   margin-bottom: 35px;
+  line-height: 24px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -326,6 +329,7 @@ input[type="checkbox"].visually-hidden {
   margin-bottom: 30px;
   padding-left: 380px;
   padding-right: 380px;
+  color: #000000;
 }
 
 .intro p {
@@ -336,6 +340,7 @@ input[type="checkbox"].visually-hidden {
 
 .service-item p{
   color: #333333;
+  line-height: 21px;
 }
 
 .advantages {
@@ -353,6 +358,7 @@ input[type="checkbox"].visually-hidden {
   padding: 30px 139px;
   text-transform: uppercase;
   font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
   color: #ffffff;
   background-color: #766357;
@@ -378,6 +384,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .top {
+  line-height: 21px;
   font-weight: 400;
   color: #666666;
   background-color: #f2f2f2;
@@ -448,6 +455,7 @@ input[type="checkbox"].visually-hidden {
 .button-found,
 .detail {
   font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
   color: #ffffff;
   background-color: #81b3d2;
@@ -498,8 +506,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filters {
-  position: relative;
-  top: -30px;
+  margin-top: -30px;
   min-height: 190px;
   color: #ffffff;
   background: #5d7284;
@@ -584,7 +591,7 @@ input[type="checkbox"].visually-hidden {
 
 .filter-range-title {
   margin-bottom: 9px;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 16px;
   line-height: 21px;
 }
@@ -621,6 +628,7 @@ input[type="checkbox"].visually-hidden {
 .price-controls .max-price {
   width: 90px;
   padding-left: 65px;
+  line-height: 21px;
 }
 
 .price-controls input {
@@ -677,7 +685,7 @@ input[type="checkbox"].visually-hidden {
   margin: 0 auto;
   padding: 6px 35px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -806,8 +814,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 .item-top {
-  display: flex;
-  flex-direction: column;
   height: 97px;
   width: 111px;
   margin-left: auto;
@@ -864,7 +870,7 @@ input[type="checkbox"].visually-hidden {
   text-decoration: underline;
   text-decoration-color: #81b3d2;
   text-decoration-style: dotted;
-  color: #d2d2d2;
+  color: #cacaca;
 }
 
 .sort-item a:first-of-type {
@@ -898,9 +904,12 @@ input[type="checkbox"].visually-hidden {
   height: 395px;
   background: #ffffff;
   box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
 }
-
-/*.form-invisible {
+/*
+.form-invisible {
   display: none;
 }
 
@@ -910,25 +919,33 @@ input[type="checkbox"].visually-hidden {
 }*/
 
 .found-form button {
+  position: relative;
   border: medium none;
   background-color: rgb(242, 242, 242);
   height: 35px;
   width: 340px;
   text-transform: uppercase;
   cursor: pointer;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .found-form .departure {
   margin-left: 20px;
-  padding-right: 195px;
+  /*padding-left: 15px;*/
 }
 
-.icon-calendar {
+.icon-calendar::after {
   content: "";
+  display: block;
   position: absolute;
   background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
-  /*top: 15px;*/
+  width: 23px;
+  height: 23px;
+  top: 5px;
+  right: 5px;
 }
 
 .found-form button:hover {
@@ -940,7 +957,7 @@ input[type="checkbox"].visually-hidden {
   outline: 2px solid  #e5e5e5;
 }
 
-.date-coming-cal,
+/*.date-coming-cal,
 .date-departure-cal {
   position: absolute;
   font-size: 21px;
@@ -966,7 +983,7 @@ input[type="checkbox"].visually-hidden {
 .date-coming-cal span:active,
 .date-departure-cal span:active {
   color: #81b3d2;
-}
+}*/
 
 .found-form .date-coming,
 .found-form .date-departure {
@@ -1049,6 +1066,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .amount input {
+  line-height: 26px;
+  font-weight: bold;
   height: 37px;
   width: 40px;
   border: none;
@@ -1093,3 +1112,25 @@ input[type="checkbox"].visually-hidden {
   background-color: #5496bd;
   color: #88b6d1;
 }
+
+/*Анимация формы
+@keyframes form_opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}*/
