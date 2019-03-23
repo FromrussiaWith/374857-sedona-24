@@ -8,41 +8,43 @@
     <title> HTML Academy: Sedona</title>
   </head>
   <body class="general">
-    <div class="container">
+    <div class="container index-conteiner">
       <header class="main-header">
         <div class="header-container">
           <nav class="main-navigation">
-              <ul class="site-navigation">
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a class="main-logo" href="#"><img src="img/logo.png" alt="Sedona" width="140" height="71"></a></li>
-                <li><a href="#">Карта штата</a></li>
-                <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
-              </ul>
+            <ul class="site-navigation">
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Фото и видео</a></li>
+              <li><a href="#">Карта штата</a></li>
+              <li><a href="catalog.html">Гостиницы</a></li>
+            </ul>
+            <div class="header-logo">
+              <a class="main-logo" href="index.html"><img src="img/logo-sedona.svg" alt="Sedona" width="140" height="71"></a>
+            </div>
           </nav>
         </div>
       </header>
 
       <main>
-      <section class="intro">
-        <div class="welcome">
-          <img src="img/welcome.png" alt="Welcom to the gargeous Sedona" width="458" height="352">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="59"><image width="1200" height="59" xlink:href="data:img/png;base64,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"/>
-          </svg>
-        </div>
-        <h1> Седона &ndash; небольшой городок в аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      </section>
-
-      <section class="info">
-        <div class="info-text">
-          <h3>Настоящий городок</h3>
-          <b>&#8211;&#8470;1&#8211;</b>
-          <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
-        </div>
-          <div class="gallery">
-            <img src="img/Layer10.jpg" alt="Городок" width="800" height="256">
+        <section class="intro">
+          <div class="welcome">
+            <img src="img/intro-welcome.svg" alt="Welcom to the gargeous Sedona" width="458" height="352">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="59" preserveAspectRatio="none"><path d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z" fill="#fff"/>
+            </svg>
           </div>
+          <h1> Седона &ndash; небольшой городок в аризоне, заслуживающий большего!</h1>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </section>
+
+        <section class="info">
+          <div class="info-text">
+            <h3>Настоящий городок</h3>
+            <b>&#8211;&#8470;1&#8211;</b>
+            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+            <div class="gallery">
+              <img src="img/layer10.jpg" alt="Городок" width="800" height="256">
+            </div>
         </section>
 
         <section class="service">
@@ -80,7 +82,7 @@
 
         <section class="info info-reverse">
           <div class="gallery">
-            <img src="img/Layer5.jpg" alt="Мост" width="800" height="256">
+            <img src="img/layer5.jpg" alt="Мост" width="800" height="256">
           </div>
           <div class="info-text text-reverse">
             <h3>Там есть<br>мост дьявола</h3>
@@ -113,7 +115,7 @@
         <section class="found-hotels">
           <h3>Заинтересновались?</h3>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="btn" type="иbutton">Поиск гостиницы в седоне</button>
+          <button class="btn" type="button">Поиск гостиницы в седоне</button>
         </section>
 
         <section class="modal">
@@ -121,11 +123,11 @@
           <form class="found-form form-invisible" action="https://echo.htmlacademy.ru" method="post">
             <label class="date-coming" for="date-coming">
               Дата заезда:
-              <button class="departure" type="text" name="date-coming-cal"><span class="icon-calendar">24 апреля 2016</span></button>
+              <button class="departure" type="text" name="date-coming-cal">24 апреля 2016<span class="icon-calendar"></span></button>
             </label>
             <label class="date-departure" for="date-departure">
               Дата выезда:
-              <button class="departure" type="text" name="date-departure-cal"><span class="icon-calendar">4 июля 2016</span></button>
+              <button class="departure" type="text" name="date-departure-cal">4 июля 2016<span class="icon-calendar"></span></button>
             </label>
             <div class="amount">
               <label for="found-adults">Взрослые:</label>
@@ -145,35 +147,35 @@
           <h2 class="visually-hidden">Как до нас добраться</h2>
               <img src="img/map.jpg" alt="карта проезда" width="1200" height="477">
         </section>
-    </main>
+      </main>
 
-    <footer class="main-footer">
+      <footer class="main-footer footer-index">
         <a class="hashtag" href="#">#visitSEDONA</a>
 
-          <ul class="social">
-            <li><a class="social-button" href="#">
-              <span class="visually-hidden">Twitter</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15">
-                <image width="17" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAQAAACouOyaAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDBjen7TaAAAAzklEQVQoz3WRvQpBYRyHf75SkolFSlldgTLJDVhsBotYFHfgFk4WZTAYXIFiViaT3AAppZzNodPxGHQ4B+fZ3n5P/69XxAnJB1lWONyYkCRDWfRZE/EIea64mDxoihmwI/VWlnhxWIghABZdopLEzaeYFEXh/byzYczDp7Ql0eNAMDUprLxyCmYviYxng29sYq8dSpgBykqSwpIcpQLaTN1LhNj9rXEi8bloGuPPRHU3rtLC4PwjDD4Vxlg/8YWG/2crjNhiA3BkToekN38CQPI7zmHIx8AAAAAASUVORK5CYII="/></svg>
-            </a></li>
-            <li><a class="social-button" href="#">
-              <span class="visually-hidden">Facebook</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22">
-                <image width="12" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAQAAABeMbWRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDDWbQOivAAAAVElEQVQoz2NggIP/Bv93/v/1HwqQhb/9RwIIiZ3/UQAjXOIXAysDEoBK/Gdk+AcVUWD4iKyAAW6GAITPxIAD4JRgRHIYcTrIsQPqPIb3NPPH4JQAAMxOR+EfSfRoAAAAAElFTkSuQmCC"/>
-              </svg>
-            </a></li>
-            <li><a class="social-button" href="#">
-              <span class="visually-hidden">Youtube</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16">
-                <image width="20" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAQAAAC8EZeQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDQjaM5X/AAAAmUlEQVQoz5WSsQ3CQAxF3wUEA6S7jgpGYAYqapYhNTADUzAEKFXqSDAETaSI+zSRwsERjCvLfrL8v428KrUailalvNOVGb/j5vQgM4DBSQYM3qYVXGxg5ZYsOBESZKRv3dVyHdXE0pMggCba6d63hhWP+nSc6itnz4bpa+0D1JwDq4S30Y5bnb/d8Q/Dg4kLGbUJrJFXaXmzJ+Whw8Ghbbm9AAAAAElFTkSuQmCC"/></svg>
-            </a></li>
-          </ul>
+        <ul class="social">
+          <li><a class="social-button" href="#">
+            <span class="visually-hidden">Twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15">
+              <image width="17" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAQAAACouOyaAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDBjen7TaAAAAzklEQVQoz3WRvQpBYRyHf75SkolFSlldgTLJDVhsBotYFHfgFk4WZTAYXIFiViaT3AAppZzNodPxGHQ4B+fZ3n5P/69XxAnJB1lWONyYkCRDWfRZE/EIea64mDxoihmwI/VWlnhxWIghABZdopLEzaeYFEXh/byzYczDp7Ql0eNAMDUprLxyCmYviYxng29sYq8dSpgBykqSwpIcpQLaTN1LhNj9rXEi8bloGuPPRHU3rtLC4PwjDD4Vxlg/8YWG/2crjNhiA3BkToekN38CQPI7zmHIx8AAAAAASUVORK5CYII="/></svg>
+          </a></li>
+          <li><a class="social-button" href="#">
+            <span class="visually-hidden">Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22">
+              <image width="12" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAQAAABeMbWRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDDWbQOivAAAAVElEQVQoz2NggIP/Bv93/v/1HwqQhb/9RwIIiZ3/UQAjXOIXAysDEoBK/Gdk+AcVUWD4iKyAAW6GAITPxIAD4JRgRHIYcTrIsQPqPIb3NPPH4JQAAMxOR+EfSfRoAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a></li>
+          <li><a class="social-button" href="#">
+            <span class="visually-hidden">Youtube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16">
+              <image width="20" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAQAAAC8EZeQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDQjaM5X/AAAAmUlEQVQoz5WSsQ3CQAxF3wUEA6S7jgpGYAYqapYhNTADUzAEKFXqSDAETaSI+zSRwsERjCvLfrL8v428KrUailalvNOVGb/j5vQgM4DBSQYM3qYVXGxg5ZYsOBESZKRv3dVyHdXE0pMggCba6d63hhWP+nSc6itnz4bpa+0D1JwDq4S30Y5bnb/d8Q/Dg4kLGbUJrJFXaXmzJ+Whw8Ghbbm9AAAAAElFTkSuQmCC"/></svg>
+          </a></li>
+        </ul>
 
-        <a class="button" href="https://htmlacademy.ru">
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
         <span>Website by</span>
         <div class="copyright-logo">
         </div></a>
-    </footer>
+      </footer>
 
     </div>
   </body>
