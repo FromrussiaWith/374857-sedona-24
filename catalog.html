@@ -12,20 +12,21 @@
       <header class="main-header">
         <div class="header-container">
           <nav class="main-navigation">
-              <ul class="site-navigation">
+            <ul class="site-navigation">
               <li><a href="#">Информация</a></li>
               <li><a href="#">Фото и видео</a></li>
-              <li><a class="main-logo" href="#"><img src="img/logo.png" alt="Sedona" width="140" height="71"></a></li>
               <li><a href="#">Карта штата</a></li>
               <li class="site-navigation-current"><a href="#">Гостиницы</a></li>
             </ul>
-        </nav>
-      </div>
+            <div class="header-logo">
+              <a class="main-logo" href="index.html"><img src="img/logo-sedona.svg" alt="Sedona" width="140" height="71"></a>
+            </div>
+          </nav>
+        </div>
       </header>
 
-    <main>
-      <section class="filters">
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <main>
+        <form class="filters filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="infrasrtrucure-item">
             <legend>Инфраструктура:</legend>
             <ul>
@@ -78,26 +79,31 @@
             <button class="btn-transparent" type="submit">Показать</button>
           </div>
         </form>
-      </section>
 
-      <section class="sort">
-        <p>Найдено:3</p>
-          <ul class="sort-list">
-            <li class="sort-found"><p>Сортировка:</p></li>
-            <li class="sort-item"><a href="#">По цене</a></li>
-            <li class="sort-item"><a href="#">По типу</a></li>
-            <li class="sort-item"><a href="#">По рейтингу</a></li>
-          </ul>
-        <div class="sorting-ab">
+        <section class="sort">
+          <div class="sorting-num">
+            <p>Найдено: 3</p>
+          </div>
+          <div class="sorting-range">
+            <p>Сортировка:</p>
+              <ul class="sort-list">
+                <li class="sort-item"><a href="#">По цене</a></li>
+                <li class="sort-item"><a href="#">По типу</a></li>
+                <li class="sort-item"><a href="#">По рейтингу</a></li>
+              </ul>
+          </div>
+
           <ul class="sorting-ab-list">
-            <li><a href="#"><span class="icon-up-dir"></span></a></li>
-            <li><a><span class="icon-down-dir active"></span></a></li>
+            <li><a  class="icon-up-dir" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
+            </svg></a></li>
+            <li><a class="icon-down-dir" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#231F20" d="M5.5 10L0 0h11"/>
+            </svg></a></li>
           </ul>
-        </div>
-      </section>
+        </section>
 
-      <section class="found-items">
-        <div class="item">
+        <section class="found-items">
           <div class="item-info">
               <img src="img/amara.jpg" alt="Amara resort &#38; spa" width="135" height="91">
             <div class="found-info">
@@ -112,15 +118,16 @@
               </div>
             </div>
             <div class="item-top">
-              <a class="top" href="#">Рейтинг:8,5</a>
               <div class="stars">
                 <span class="icon-star"></span>
                 <span class="icon-star"></span>
                 <span class="icon-star"></span>
                 <span class="icon-star"></span>
               </div>
+              <p class="top">Рейтинг:8,5</p>
             </div>
           </div>
+
           <div class="item-info">
           <img src="img/desert.jpg" alt="Desert quail inn" width="135" height="91">
             <div class="found-info">
@@ -135,10 +142,15 @@
               </div>
             </div>
             <div class="item-top">
-              <a class="top" href="#">Рейтинг:8,9</a>
-              <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+              <p class="top">Рейтинг:8,9</p>
+              <div class="stars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
             </div>
           </div>
+
           <div class="item-info">
               <img src="img/villas.jpg" alt="Villas at poco diablo" width="135" height="91">
             <div class="found-info">
@@ -153,49 +165,43 @@
               </div>
             </div>
             <div class="item-top">
-              <a class="top" href="#">Рейтинг:9,2</a>
-              <span class="icon-star"></span><span class="icon-star"></span>
+              <p class="top">Рейтинг:9,2</p>
+              <div class="stars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <footer class="main-footer footer">
+      <footer class="main-footer">
+          <a class="hashtag" href="#">#visitSEDONA</a>
 
-        <div class="hashtag">
-          <a href="#">#visitSEDONA</a>
-        </div>
+            <ul class="social">
+              <li><a class="social-button" href="#">
+                <span class="visually-hidden">Twitter</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15">
+                  <image width="17" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAQAAACouOyaAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDBjen7TaAAAAzklEQVQoz3WRvQpBYRyHf75SkolFSlldgTLJDVhsBotYFHfgFk4WZTAYXIFiViaT3AAppZzNodPxGHQ4B+fZ3n5P/69XxAnJB1lWONyYkCRDWfRZE/EIea64mDxoihmwI/VWlnhxWIghABZdopLEzaeYFEXh/byzYczDp7Ql0eNAMDUprLxyCmYviYxng29sYq8dSpgBykqSwpIcpQLaTN1LhNj9rXEi8bloGuPPRHU3rtLC4PwjDD4Vxlg/8YWG/2crjNhiA3BkToekN38CQPI7zmHIx8AAAAAASUVORK5CYII="/></svg>
+              </a></li>
+              <li><a class="social-button" href="#">
+                <span class="visually-hidden">Facebook</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22">
+                  <image width="12" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAQAAABeMbWRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDDWbQOivAAAAVElEQVQoz2NggIP/Bv93/v/1HwqQhb/9RwIIiZ3/UQAjXOIXAysDEoBK/Gdk+AcVUWD4iKyAAW6GAITPxIAD4JRgRHIYcTrIsQPqPIb3NPPH4JQAAMxOR+EfSfRoAAAAAElFTkSuQmCC"/>
+                </svg>
+              </a></li>
+              <li><a class="social-button" href="#">
+                <span class="visually-hidden">Youtube</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16">
+                  <image width="20" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAQAAAC8EZeQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDQjaM5X/AAAAmUlEQVQoz5WSsQ3CQAxF3wUEA6S7jgpGYAYqapYhNTADUzAEKFXqSDAETaSI+zSRwsERjCvLfrL8v428KrUailalvNOVGb/j5vQgM4DBSQYM3qYVXGxg5ZYsOBESZKRv3dVyHdXE0pMggCba6d63hhWP+nSc6itnz4bpa+0D1JwDq4S30Y5bnb/d8Q/Dg4kLGbUJrJFXaXmzJ+Whw8Ghbbm9AAAAAElFTkSuQmCC"/></svg>
+              </a></li>
+            </ul>
 
-        <div class="footer-social">
-          <ul class="social">
-            <li><a class="social-button" href="#">
-              <span class="visually-hidden">Twitter</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15">
-                <image width="17" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAQAAACouOyaAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDBjen7TaAAAAzklEQVQoz3WRvQpBYRyHf75SkolFSlldgTLJDVhsBotYFHfgFk4WZTAYXIFiViaT3AAppZzNodPxGHQ4B+fZ3n5P/69XxAnJB1lWONyYkCRDWfRZE/EIea64mDxoihmwI/VWlnhxWIghABZdopLEzaeYFEXh/byzYczDp7Ql0eNAMDUprLxyCmYviYxng29sYq8dSpgBykqSwpIcpQLaTN1LhNj9rXEi8bloGuPPRHU3rtLC4PwjDD4Vxlg/8YWG/2crjNhiA3BkToekN38CQPI7zmHIx8AAAAAASUVORK5CYII="/></svg>
-            </a></li>
-            <li><a class="social-button" href="#">
-              <span class="visually-hidden">Facebook</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22">
-                <image width="12" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAQAAABeMbWRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDDWbQOivAAAAVElEQVQoz2NggIP/Bv93/v/1HwqQhb/9RwIIiZ3/UQAjXOIXAysDEoBK/Gdk+AcVUWD4iKyAAW6GAITPxIAD4JRgRHIYcTrIsQPqPIb3NPPH4JQAAMxOR+EfSfRoAAAAAElFTkSuQmCC"/>
-              </svg>
-            </a></li>
-            <li><a class="social-button" href="#">
-              <span class="visually-hidden">Youtube</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16">
-                <image width="20" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAQAAAC8EZeQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwVDQjaM5X/AAAAmUlEQVQoz5WSsQ3CQAxF3wUEA6S7jgpGYAYqapYhNTADUzAEKFXqSDAETaSI+zSRwsERjCvLfrL8v428KrUailalvNOVGb/j5vQgM4DBSQYM3qYVXGxg5ZYsOBESZKRv3dVyHdXE0pMggCba6d63hhWP+nSc6itnz4bpa+0D1JwDq4S30Y5bnb/d8Q/Dg4kLGbUJrJFXaXmzJ+Whw8Ghbbm9AAAAAElFTkSuQmCC"/></svg>
-            </a></li>
-          </ul>
-        </div>
-
-        <div class="footer-copyright">
-          <a class="button" href="https://htmlacademy.ru">
+          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
           <span>Website by</span>
           <div class="copyright-logo">
           </div></a>
-        </div>
-
-    </footer>
+      </footer>
 
     </div>
   </body>
