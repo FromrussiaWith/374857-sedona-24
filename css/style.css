@@ -1397,10 +1397,10 @@ input[type="checkbox"].visually-hidden {
   }
 }
 
-/*.form-invisible {
+.form-invisible {
   display: none;
 }
-*/
+
 .form-visible {
   display: flex;
   animation: form_opacity 0.7s;
